@@ -7,7 +7,8 @@ app = Flask(__name__)
 @app.route('/stats')
 def stats():
 
-    cpu = psutil.cpu_percent(interval=1)
+    psutil.cpu_percent()
+    cpu = psutil.cpu_percent(interval=0.5)
 
     memory = psutil.virtual_memory().percent
 

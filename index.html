@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>DevOps Monitoring Dashboard</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
     </div>
 
     <div class="card memory">
-        <h2>Memory</h2>
+        <h2>Memory Usage</h2>
         <p id="memory">0%</p>
     </div>
 
@@ -34,6 +36,10 @@
         <p id="container">0</p>
     </div>
 
+</div>
+
+<div class="chart-box">
+    <canvas id="cpuChart"></canvas>
 </div>
 
 <script src="script.js"></script>
